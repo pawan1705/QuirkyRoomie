@@ -1,0 +1,38 @@
+export const complaintsData = [
+  {
+    id: 1,
+    title: "Loud Music at Night",
+    email: "pawan.sangare05@gmail.com",
+    description: "Neighbors playing loud music after 10 PM.",
+    complaintType: "Noise",
+    severityLevel: "Annoying",
+    timestamp: "2023-10-01 22:30:00",
+  },
+  {
+    id: 2,
+    title: "Garbage Not Collected",
+    email: "pawan.sangare05@gmail.com",
+    description: "Garbage has not been collected for 3 days.",
+    complaintType: "Cleanliness",
+    severityLevel: "Major",
+    timestamp: "2023-10-02 09:15:00",
+  },
+  {
+    id: 3,
+    title: "Incorrect Bill Amount",
+    email: "pawan.sangare05@gmail.com",
+    description: "Electricity bill is higher than usual.",
+    complaintType: "Bills",
+    severityLevel: "Mild",
+    timestamp: "2023-10-03 14:00:00",
+  },
+  {
+    id: 4,
+    title: "Dog Barking Constantly",
+    email: "pawan.sangare05@gmail.com",
+    description: "A dog in the neighborhood barks all day.",
+    complaintType: "Pets",
+    severityLevel: "Nuclear",
+    timestamp: "2023-10-04 07:45:00",
+  },
+];
