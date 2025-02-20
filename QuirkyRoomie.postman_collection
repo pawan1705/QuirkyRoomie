@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "8987fd57-84b7-49a9-94c4-d2c36b0daa74",
+		"name": "auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26091116"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3020/api/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"pawan\",\r\n    \"email\":\"pawan@gmail.com\",\r\n    \"password\":\"Sangare05@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3020/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"pawan@gmail.com\",\r\n    \"password\":\"Sangare05@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3020/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/auth/logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/auth/send-verify-otp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/auth/send-verify-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"auth",
+						"send-verify-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/auth//verify-account",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"otp\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3020/api/auth//verify-account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"auth",
+						"",
+						"verify-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/auth/is-auth",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/auth/is-auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"auth",
+						"is-auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/auth/send-reset-otp",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"pawan.sangare05@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3020/api/auth/send-reset-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"auth",
+						"send-reset-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/user/data",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/user/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"user",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/user/get-user-complaint/applatus.pawan@gmail.com",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/user/get-user-complaint/applatus.pawan@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"user",
+						"get-user-complaint",
+						"applatus.pawan@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/user/drop-complaint/67b577d680948f8994242d7e",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/user/drop-complaint/67b577d680948f8994242d7e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"user",
+						"drop-complaint",
+						"67b577d680948f8994242d7e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/user/downvote/67b5d12c7b2ead6032bb66e4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/user/downvote/67b5d12c7b2ead6032bb66e4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"user",
+						"downvote",
+						"67b5d12c7b2ead6032bb66e4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/user/most-voted-complaint",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/user/most-voted-complaint",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"user",
+						"most-voted-complaint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/user/toggle-status/67b5faa6da5b51679a638522",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/user/toggle-status/67b5faa6da5b51679a638522",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"user",
+						"toggle-status",
+						"67b5faa6da5b51679a638522"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/user/get-all-complaint",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/user/get-all-complaint",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"user",
+						"get-all-complaint"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3020/api/user/most-frequent-complaint-type",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3020/api/user/most-frequent-complaint-type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3020",
+					"path": [
+						"api",
+						"user",
+						"most-frequent-complaint-type"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
